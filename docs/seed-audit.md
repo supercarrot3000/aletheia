@@ -1,0 +1,11 @@
+# Seed audit
+
+The selected corpus is drawn from inspected earlier research summaries and question records, not a full export. The Nature of God source programme has 332 claim records; only its current synthesis, nine questions and a few inspected individual claims were used here. The remaining historical material has not been screened. Other imported material includes the Moral True North questions, moral beauty discussion, moral-discovery synthesis and verification design. Public identifiers have been assigned afresh. The underlying private record IDs, operator identities, issue numbers, business details, run metadata and personal context are intentionally excluded.
+
+The Purple Man narrative preserves the complete account supplied in conversation, not the original script (which is unavailable, author/title unidentified). The story is an attributed recollection and interpretation, not a verified account of the playwright's intention. The contributor's recollection is included under the corpus licence, with the attribution and its unresolved original provenance preserved. Do not add invented dialogue or plot details.
+
+All imported findings remain hypotheses, provisional inferences or historical research notes until public sources, exact warrants and evidence have been checked. A later migration should screen every eligible record and each attachment independently for relevance, confidentiality, ownership, copyright, provenance and duplication. Preserve counterarguments, failure modes and reversal conditions. Private mapping from original identifiers to public IDs should be maintained only outside the public repository. No bulk dump, raw chat export, private history or links requiring credentials. Review the staged tree and its entire Git history before publication. The public repo must start with clean history.
+
+Excluded from this seed: private correspondence plans, unrelated commercial/engineering programmes, private operational metadata, historical findings not inspected, and third-party full texts. This is a starter, not a claim of comprehensive migration.
+
+SRC-001 preserves the known and unknown provenance of the Purple Man account. ACKNOWLEDGEMENTS.md retains its influence and the obligation to credit its original creator. The original play retains its existing rights, and identification remains unresolved.

@@ -1,0 +1,52 @@
+{
+  "profiles": [
+    {
+      "id": "PROFILE-SIMPLICITY",
+      "description": "An illustrative propositional reading of the simplicity question. Atomic propositions concern the same subject and reading throughout.",
+      "provenance": "programmes/nature-of-god.md#first-verification-exercise"
+    }
+  ],
+  "definitions": [
+    {"id": "DEF-SIMPLE", "symbol": "simple", "description": "The subject is metaphysically simple."},
+    {"id": "DEF-COMPOSITE", "symbol": "composite", "description": "The subject has metaphysical composition."},
+    {"id": "DEF-RELATIONAL", "symbol": "relational", "description": "The subject has the relevant kind of real relational distinction."}
+  ],
+  "premises": [
+    {"id": "P-SIMPLE", "statement": "The subject is simple.", "support": "assumed for the exercise", "formula": ["var", "simple"]},
+    {"id": "P-EXCLUSION", "statement": "If the subject is simple, it has no metaphysical composition.", "support": "assumed reading of simplicity", "formula": ["implies", ["var", "simple"], ["not", ["var", "composite"]]]},
+    {"id": "P-BRIDGE", "statement": "The relevant kind of real relational distinction entails metaphysical composition.", "support": "disputed hypothetical premise used as a control", "formula": ["implies", ["var", "relational"], ["var", "composite"]]}
+  ],
+  "objections": [
+    {
+      "id": "OBJ-SIMPLICITY-SEMANTICS",
+      "statement": "Whether these independent atomic propositions capture classical divine simplicity remains unresolved. A theological or metaphysical account might constrain their joint values.",
+      "status": "open"
+    }
+  ],
+  "arguments": [
+    {
+      "id": "ARG-SIMPLICITY-GAP",
+      "profile_ref": "PROFILE-SIMPLICITY",
+      "claim_ref": "C-003",
+      "question_ref": "Q-GOD-03",
+      "definition_refs": ["DEF-SIMPLE", "DEF-COMPOSITE", "DEF-RELATIONAL"],
+      "premise_refs": ["P-SIMPLE", "P-EXCLUSION"],
+      "objection_refs": ["OBJ-SIMPLICITY-SEMANTICS"],
+      "depends_on": [],
+      "conclusion": ["not", ["var", "relational"]],
+      "warrant": "Test whether the assumptions entail the absence of the relevant relational distinction."
+    },
+    {
+      "id": "ARG-SIMPLICITY-BRIDGE",
+      "profile_ref": "PROFILE-SIMPLICITY",
+      "claim_ref": "C-003",
+      "question_ref": "Q-GOD-03",
+      "definition_refs": ["DEF-SIMPLE", "DEF-COMPOSITE", "DEF-RELATIONAL"],
+      "premise_refs": ["P-SIMPLE", "P-EXCLUSION", "P-BRIDGE"],
+      "objection_refs": ["OBJ-SIMPLICITY-SEMANTICS"],
+      "depends_on": [],
+      "conclusion": ["not", ["var", "relational"]],
+      "warrant": "Compose the exclusion of composition with the hypothetical bridge; the extra premise is explicit."
+    }
+  ]
+}

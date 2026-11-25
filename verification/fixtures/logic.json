@@ -1,0 +1,177 @@
+[
+  {
+    "id": "purple-reversal",
+    "premises": [
+      [
+        "implies",
+        [
+          "var",
+          "good"
+        ],
+        [
+          "var",
+          "purple"
+        ]
+      ]
+    ],
+    "conclusion": [
+      "implies",
+      [
+        "var",
+        "purple"
+      ],
+      [
+        "var",
+        "good"
+      ]
+    ],
+    "expected": "countermodel"
+  },
+  {
+    "id": "image-beauty-gap",
+    "premises": [
+      [
+        "var",
+        "image"
+      ]
+    ],
+    "conclusion": [
+      "var",
+      "beauty"
+    ],
+    "expected": "countermodel"
+  },
+  {
+    "id": "recognition-choice-gap",
+    "premises": [
+      [
+        "var",
+        "recognises"
+      ]
+    ],
+    "conclusion": [
+      "var",
+      "chooses"
+    ],
+    "expected": "countermodel"
+  },
+  {
+    "id": "simplicity-gap",
+    "premises": [
+      [
+        "var",
+        "simple"
+      ],
+      [
+        "implies",
+        [
+          "var",
+          "simple"
+        ],
+        [
+          "not",
+          [
+            "var",
+            "composite"
+          ]
+        ]
+      ]
+    ],
+    "conclusion": [
+      "not",
+      [
+        "var",
+        "relational"
+      ]
+    ],
+    "expected": "countermodel"
+  },
+  {
+    "id": "simplicity-bridge-control",
+    "premises": [
+      [
+        "var",
+        "simple"
+      ],
+      [
+        "implies",
+        [
+          "var",
+          "simple"
+        ],
+        [
+          "not",
+          [
+            "var",
+            "composite"
+          ]
+        ]
+      ],
+      [
+        "implies",
+        [
+          "var",
+          "relational"
+        ],
+        [
+          "var",
+          "composite"
+        ]
+      ]
+    ],
+    "conclusion": [
+      "not",
+      [
+        "var",
+        "relational"
+      ]
+    ],
+    "expected": "entailed"
+  },
+  {
+    "id": "contradiction",
+    "premises": [
+      [
+        "var",
+        "simple"
+      ],
+      [
+        "not",
+        [
+          "var",
+          "simple"
+        ]
+      ]
+    ],
+    "conclusion": [
+      "var",
+      "beauty"
+    ],
+    "expected": "inconsistent_premises"
+  },
+  {
+    "id": "modus-ponens-control",
+    "premises": [
+      [
+        "var",
+        "good"
+      ],
+      [
+        "implies",
+        [
+          "var",
+          "good"
+        ],
+        [
+          "var",
+          "purple"
+        ]
+      ]
+    ],
+    "conclusion": [
+      "var",
+      "purple"
+    ],
+    "expected": "entailed"
+  }
+]

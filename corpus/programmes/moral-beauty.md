@@ -1,0 +1,7 @@
+# Moral beauty, Imago Dei and choice
+
+Start with IDEA-001 and IDEA-002. Separate functional recognition of beauty, propositional understanding, phenomenal appreciation and choosing goodness for its own sake. None should be assumed to entail the next. Learning to alter the proxy (colour) is not learning what it expresses. The girl challenges the idea that sophisticated abstract reasoning is necessary for appreciation. Her image-bearing or value must never be made conditional on her demonstrated capacity.
+
+The working theological hypothesis is that experiential moral beauty may be associated with bearing God's image, not simply with increasing intelligence. Examine Genesis 1:26–27, Psalm 27:4 and competing theological accounts. The text alone does not explicitly establish the hypothesised bridge. Animal aesthetic behaviour could be functional, experiential or both; subjective experience remains uncertain. The same care applies to AI. Reward signals are not automatically felt pleasure, and goal-directed behaviour need not be motivated by experienced desire.
+
+The aim includes humanity as well as machines: sincere conviction of goodness is not identical to goodness. A powerful agent might harm through indifference without malice. Explore robust care, uncertainty, corrigibility and human agency without treating the prospect of solving human problems as justification for unchecked authority.

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "pre_publication",
+  "ideas": [
+    {
+      "id": "IDEA-001",
+      "path": "ideas/purple-man.md",
+      "type": "attributed_recollection",
+      "source_status": "unidentified",
+      "release_status": "review_required",
+      "source_refs": [
+        "SRC-001"
+      ],
+      "question_refs": [
+        "Q-BEAUTY-01", "Q-BEAUTY-02", "Q-BEAUTY-03", "Q-BEAUTY-04", "Q-BEAUTY-05",
+        "Q-BEAUTY-06", "Q-BEAUTY-07", "Q-BEAUTY-08", "Q-BEAUTY-09", "Q-BEAUTY-10"
+      ]
+    },
+    {
+      "id": "IDEA-002",
+      "path": "ideas/tree-acquaintance.md",
+      "type": "analogy",
+      "release_status": "review_required",
+      "question_refs": ["Q-BEAUTY-02", "Q-BEAUTY-04", "Q-BEAUTY-05"]
+    }
+  ],
+  "programmes": [
+    "programmes/nature-of-god.md",
+    "programmes/moral-true-north.md",
+    "programmes/moral-beauty.md",
+    "programmes/moral-discovery.md"
+  ],
+  "programme_ids": {
+    "GOD": "programmes/nature-of-god.md",
+    "MORAL": "programmes/moral-true-north.md",
+    "BEAUTY": "programmes/moral-beauty.md",
+    "DISCOVERY": "programmes/moral-discovery.md"
+  },
+  "questions": "questions.json",
+  "claims": "claims.json",
+  "formal": "arguments.json",
+  "sources": [
+    {
+      "id": "SRC-001",
+      "path": "sources/purple-man-origin.json"
+    }
+  ]
+}

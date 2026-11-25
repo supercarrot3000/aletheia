@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "preserved_files": [
+    "corpus/ideas/purple-man.md",
+    "corpus/sources/purple-man-origin.json",
+    "ACKNOWLEDGEMENTS.md",
+    "corpus/programmes/nature-of-god.md"
+  ],
+  "preserved_programmes": ["GOD"],
+  "preserved_records": [
+    "IDEA-001",
+    "SRC-001",
+    "Q-GOD-03",
+    "C-003",
+    "PROFILE-SIMPLICITY",
+    "DEF-SIMPLE",
+    "DEF-COMPOSITE",
+    "DEF-RELATIONAL",
+    "P-SIMPLE",
+    "P-EXCLUSION",
+    "P-BRIDGE",
+    "OBJ-SIMPLICITY-SEMANTICS",
+    "ARG-SIMPLICITY-GAP",
+    "ARG-SIMPLICITY-BRIDGE"
+  ],
+  "required_outcomes": {
+    "ARG-SIMPLICITY-GAP": "countermodel",
+    "ARG-SIMPLICITY-BRIDGE": "entailed"
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "C-001",
+    "type": "hypothesis",
+    "statement": "Experiential moral beauty may be associated with bearing the Image of God.",
+    "status": "open",
+    "idea_refs": [
+      "IDEA-001",
+      "IDEA-002"
+    ],
+    "question_refs": [
+      "Q-BEAUTY-03"
+    ],
+    "premise_support": "underdetermined",
+    "objections": [
+      "Scriptural bridge not established",
+      "Alternative accounts of experience and aesthetic capacity"
+    ],
+    "reversal_condition": "A justified account that severs or revises the proposed link."
+  },
+  {
+    "id": "C-002",
+    "type": "hypothesis",
+    "statement": "Objective moral good may be grounded in divine holiness and relational alignment.",
+    "status": "open",
+    "question_refs": [
+      "Q-MORAL-05",
+      "Q-MORAL-07"
+    ],
+    "premise_support": "unverified",
+    "objections": [
+      "Non-theistic normative realism",
+      "Normative authority must not be defined vacuously"
+    ],
+    "reversal_condition": "A stronger rival account or failure of a necessary bridge."
+  },
+  {
+    "id": "C-003",
+    "type": "provisional_inference",
+    "statement": "A real relational distinction does not follow to be impossible merely from an exclusion of metaphysical composition; a bridge connecting relational distinction to composition is needed.",
+    "status": "conditional",
+    "question_refs": [
+      "Q-GOD-03"
+    ],
+    "premise_support": "formal toy encoding only",
+    "objections": [
+      "Whether the encoding matches classical simplicity remains unresolved"
+    ],
+    "reversal_condition": "A justified definition or independent premise establishing the relevant bridge."
+  },
+  {
+    "id": "C-004",
+    "type": "hypothesis",
+    "statement": "Moral-discovery training may improve out-of-distribution moral generalisation.",
+    "status": "open",
+    "question_refs": [
+      "Q-DISCOVERY-06"
+    ],
+    "premise_support": "requires experiment",
+    "objections": [
+      "Mimicry",
+      "Over-refusal",
+      "Paternalistic override",
+      "Data quality differences"
+    ],
+    "reversal_condition": "Matched tests show no gain or a competing explanation accounts for the gain."
+  }
+]

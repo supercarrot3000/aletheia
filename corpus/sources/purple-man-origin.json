@@ -1,0 +1,32 @@
+{
+  "id": "SRC-001",
+  "title": "Unidentified play: the Purple Man and Alice Springs",
+  "kind": "unidentified_literary_work",
+  "identification_status": "unresolved",
+  "original_title": null,
+  "author": null,
+  "broadcast": {
+    "station_recalled": "BBC Radio 2",
+    "station_confirmed": false,
+    "format_recalled": "A person discussing a play they had created; not necessarily a broadcast of the play itself",
+    "programme": null,
+    "date": null
+  },
+  "recollection": {
+    "recorded": "2026-11",
+    "attribution": "Project contributor; personal identity not included in this public candidate",
+    "idea_ref": "IDEA-001",
+    "scope": "Complete available recollection and subsequent clarifications, not the original script"
+  },
+  "search_clues": [
+    "Girl with a learning disability living in Australia",
+    "Things she experienced as good were purple; strawberries were purple on days she liked them",
+    "Longed to visit Alice Springs after seeing pictures, but never had the opportunity",
+    "Became very ill; the Purple Man came and took her to Alice Springs"
+  ],
+  "interpretation_status": "Contributor-confirmed Christian interpretation; authorial intention unverified",
+  "search_status": "Open: earlier searches did not establish an identification",
+  "rights_status": "Unknown original rights holder; no permission or original-work licence inferred",
+  "acknowledgement_path": "../../ACKNOWLEDGEMENTS.md",
+  "credit_policy": "Identify and credit the original creator when verified; retain the unresolved provenance history and update the idea and acknowledgements. Do not infer identity from a partial match."
+}
