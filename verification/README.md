@@ -14,3 +14,7 @@ ALETHEIA_TEST_LEAN=1 python3 -B -m unittest discover -s verification/tests -v
 ```
 
 The draft GitHub workflow exercises the Python suite in the proposed tree. The independent local replay uses a separately retained baseline. Hosted enforcement is a later stage.
+
+## Optional finite-model experiment
+
+The [identity-collapse investigation](../corpus/investigations/simplicity-identity.md) uses a pinned Z3 version for finite first-order model search. It has its own replay command and regressions. The regular verifier and Lean proof remain independent of that installation.

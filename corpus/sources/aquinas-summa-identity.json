@@ -1,0 +1,15 @@
+{
+  "id": "SRC-AQUINAS-SUMMA",
+  "title": "Thomas Aquinas, Summa Theologiae, Prima Pars",
+  "kind": "primary_text",
+  "author": "Thomas Aquinas",
+  "edition": "Leonine text (Rome, 1888), Corpus Thomisticum transcription",
+  "language": "Latin",
+  "locators": [
+    {"reference": "I, q. 3, a. 7, respondeo", "url": "https://www.corpusthomisticum.org/sth1003.html", "use": "Several senses of composition and the case for divine simplicity."},
+    {"reference": "I, q. 28, a. 2, respondeo and ad 2", "url": "https://www.corpusthomisticum.org/sth1028.html", "use": "Real relations, essence and their difference in intelligibility."},
+    {"reference": "I, q. 28, a. 3, arg. 1, respondeo and ad 1", "url": "https://www.corpusthomisticum.org/sth1028.html", "use": "The identity objection, real relative opposition and Aquinas's reply."},
+    {"reference": "I, q. 39, a. 1, respondeo and ad 1", "url": "https://www.corpusthomisticum.org/sth1028.html", "use": "Subsistent relations and persons, with unity of essence."}
+  ],
+  "access": "Public primary-source locators with original research paraphrase."
+}

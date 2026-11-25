@@ -121,6 +121,10 @@ class Corpus:
             if item["id"] != record["id"]:
                 raise ValueError(f"{path}: source ID differs from index")
             self.register("source", record, path, ("title", "kind"))
+        for item in sequence(index.get("investigations", [])):
+            path = "corpus/" + string(item["path"])
+            self.text(path)
+            self.register("investigation", item, path, ("title",))
         for ident, path in index["programme_ids"].items():
             self.programmes[string(ident)] = "corpus/" + string(path)
             self.text(self.programmes[ident])
@@ -157,6 +161,9 @@ class Corpus:
                 idea = self.ref(source["id"], source["recollection"]["idea_ref"], "idea")
                 if source["id"] not in idea.get("source_refs", []):
                     raise ValueError(f"{source['id']}: missing reciprocal idea reference")
+        for record in self.by_kind("investigation"):
+            if not self.refs(record, "question_refs", "question") or not self.refs(record, "source_refs", "source"):
+                raise ValueError(f"{record['id']}: investigations require a question and a source")
         for record in self.by_kind("question"):
             if record["programme"] not in self.programmes:
                 raise ValueError(f"{record['id']}: unknown programme {record['programme']}")
@@ -211,11 +218,12 @@ class Corpus:
             for field in ("definition_refs", "premise_refs", "objection_refs"):
                 related.update(argument.get(field, []))
             pending.extend(argument.get("depends_on", []))
+        related.update(item["id"] for item in self.by_kind("investigation") if question in item["question_refs"])
         for ident in tuple(related):
-            if self.kinds[ident] == "idea":
+            if self.kinds[ident] in {"idea", "investigation"}:
                 related.update(self.records[ident].get("source_refs", []))
         paths = {self.programmes[self.records[ident]["programme"]] for ident in related if self.kinds[ident] == "question"}
-        paths.update(self.locations[ident] for ident in related if self.kinds[ident] == "idea")
+        paths.update(self.locations[ident] for ident in related if self.kinds[ident] in {"idea", "investigation"})
         if "SRC-001" in related:
             paths.add("ACKNOWLEDGEMENTS.md")
         return {
