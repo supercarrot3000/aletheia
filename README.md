@@ -34,12 +34,15 @@ The receipt reports a countermodel for the missing-bridge argument and a Lean-ch
 
 ## Standing on the shoulders of established research
 
-The implementation labels below refer to the initial release. The verified preview runs all five tools.
+**All five verification tools have been integrated and tested.** The initial release on `main` includes the Lean 4 bridge proof. The additional experiments and their replay instructions are available in the public drafts. [Identity-collapse PR](https://github.com/supercarrot3000/aletheia/pull/1) · [Integration PR](https://github.com/supercarrot3000/aletheia/pull/2)
 
-- **Implemented in the local milestone.** [Lean 4](https://lean-lang.org/doc/reference/latest/Introduction/) checks the exact encoded bridge theorem with its logical kernel and exposes its axiom dependencies.
-- **Planned where a proof needs the library.** [Mathlib](https://mathlib.org/) provides maintained definitions and theorems for Lean. The current proof uses Lean core.
-- **Planned for modal and higher-order work.** [Isabelle/HOL](https://isabelle.in.tum.de/) supports machine-checked higher-order proofs. [Nitpick](https://isabelle.in.tum.de/~nipkow/pubs/itp10.pdf) searches for finite countermodels to higher-order conjectures within stated bounds.
-- **Planned for SMT encodings.** [Z3](https://microsoft.github.io/z3guide/docs/logic/basiccommands/) can check satisfiability and produce models for supported theories, including exercises that outgrow the small propositional reference checker.
+| Tool | Verified use | Where to replay it |
+| --- | --- | --- |
+| Lean 4 | Checks the bridge proof and exposes its axiom dependencies. | [Replay on `main`](#run-locally) |
+| Mathlib | Supplies the quotient machinery for the checked theorem about when grouping preserves a relationship. | [Mathlib replay](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/verification/README.md#mathlib-grouping-theorem) |
+| Z3 | Replays 15 finite queries comparing identity, common essence and opposition. | [Z3 replay](https://github.com/supercarrot3000/aletheia/blob/6fa31b09dc1d91dce39694260d6b03d96a43e029/corpus/investigations/simplicity-identity.md#replay) |
+| Isabelle/HOL | Checks the modal bridge theorem and the explicit interpretations for necessary relations and contingent creation. | [Isabelle replay](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/corpus/investigations/modal-creation.md#replay) |
+| Nitpick | Finds two-world counterexamples for the Aletheia creation argument and the published Anderson reference. | [Nitpick replay](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/corpus/investigations/modal-creation.md#replay) |
 
 Christoph Benzmüller and colleagues provide a precedent for computational theology that exposes the consequences of competing axioms. Benzmüller and Bruno Woltzenlogel Paleo formalised variants of Gödel’s ontological argument with higher-order provers. Benzmüller and David Fuenmayor examined positive properties and modal collapse in related variants. [Formalisation of Gödel’s argument](https://arxiv.org/abs/1308.4526) · [Analysis of modal collapse](https://arxiv.org/abs/1910.08955)
 
