@@ -7,7 +7,7 @@ People and AI agents can inherit the same material, recover how a conclusion was
 ## Start with the research
 
 - [The Purple Man and Alice Springs](corpus/ideas/purple-man.md) preserves the full available recollection and the contributor's clarifications. The original playwright’s identity remains open, and their work helped inspire this project. [Provenance record](corpus/sources/purple-man-origin.json) · [Acknowledgement](ACKNOWLEDGEMENTS.md)
-- [Nature of God and fundamental reality](corpus/programmes/nature-of-god.md) introduces the divine-simplicity question. The local demonstration tests whether excluding composition also excludes real relational distinction.
+- [Nature of God and fundamental reality](corpus/programmes/nature-of-god.md) introduces the divine-simplicity question. The local demonstration tests whether excluding composition also excludes real relational distinction. The [identity-collapse investigation](corpus/investigations/simplicity-identity.md) traces a sharper objection to Aquinas and compares finite models of the competing assumptions.
 - [Moral True North](corpus/programmes/moral-true-north.md), [Moral beauty](corpus/programmes/moral-beauty.md) and [Moral discovery](corpus/programmes/moral-discovery.md) record hypotheses, competing readings and questions for further work.
 
 ## Run locally
@@ -29,7 +29,7 @@ The receipt reports a countermodel for the missing-bridge argument and a Lean-ch
 - **Implemented in the local milestone.** [Lean 4](https://lean-lang.org/doc/reference/latest/Introduction/) checks the exact encoded bridge theorem with its logical kernel and exposes its axiom dependencies.
 - **Planned where a proof needs the library.** [Mathlib](https://mathlib.org/) provides maintained definitions and theorems for Lean. The current proof uses Lean core.
 - **Planned for modal and higher-order work.** [Isabelle/HOL](https://isabelle.in.tum.de/) supports machine-checked higher-order proofs. [Nitpick](https://isabelle.in.tum.de/~nipkow/pubs/itp10.pdf) searches for finite countermodels to higher-order conjectures within stated bounds.
-- **Planned for SMT encodings.** [Z3](https://microsoft.github.io/z3guide/docs/logic/basiccommands/) can check satisfiability and produce models for supported theories, including exercises that outgrow the small propositional reference checker.
+- **Implemented for the optional finite-model experiment.** [Z3](https://microsoft.github.io/z3guide/docs/logic/basiccommands/) finds finite interpretations of common essence and opposition and compares them with stronger identity assumptions. The [investigation](corpus/investigations/simplicity-identity.md#replay) includes the replay command.
 
 Christoph Benzmüller and colleagues provide a precedent for computational theology that exposes the consequences of competing axioms. Benzmüller and Bruno Woltzenlogel Paleo formalised variants of Gödel’s ontological argument with higher-order provers. Benzmüller and David Fuenmayor examined positive properties and modal collapse in related variants. [Formalisation of Gödel’s argument](https://arxiv.org/abs/1308.4526) · [Analysis of modal collapse](https://arxiv.org/abs/1910.08955)
 
