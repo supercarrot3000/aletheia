@@ -1,0 +1,14 @@
+{
+  "id": "SRC-BENZMULLER-FUENMAYOR-MODAL-COLLAPSE",
+  "title": "Computer-supported Analysis of Positive Properties, Ultrafilters and Modal Collapse in Variants of Gödel's Ontological Argument",
+  "kind": "primary_text",
+  "authors": ["Christoph Benzmüller", "David Fuenmayor"],
+  "edition": "arXiv:1910.08955v2, 13 January 2020",
+  "locators": [
+    {
+      "reference": "Section 5, Figure 5, line 20 and discussion",
+      "url": "https://arxiv.org/html/1910.08955",
+      "use": "Reference premises for Anderson's variant and a two-world, one-individual countermodel to modal collapse."
+    }
+  ]
+}

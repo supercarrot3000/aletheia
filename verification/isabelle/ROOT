@@ -1,0 +1,5 @@
+session Aletheia = HOL +
+  options [document = false, quick_and_dirty = false]
+  theories
+    Anderson_Reference
+    Creation

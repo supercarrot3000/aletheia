@@ -21,3 +21,9 @@ class ResearchInvestigation(unittest.TestCase):
         corpus.records["INV-SIMPLICITY-IDENTITY"]["source_refs"] = ["Q-GOD-03"]
         with self.assertRaisesRegex(ValueError, "must reference a source"):
             corpus.validate_links()
+
+    def test_creation_packet_includes_the_reference_and_modal_investigation(self):
+        packet = Corpus(ROOT).packet("Q-GOD-07")
+        report = packet["records"]["INV-MODAL-CREATION"]
+        self.assertIn("SRC-BENZMULLER-FUENMAYOR-MODAL-COLLAPSE", packet["records"])
+        self.assertIn("accessible", packet["documents"][f"corpus/{report['path']}"])

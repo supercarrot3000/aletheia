@@ -1,5 +1,7 @@
 # Audit and implementation roadmap
 
+The [consumer roadmap](consumer-roadmap.md) gives the proposed delivery order and user acceptance tests.
+
 ## Starting state
 
 The supplied directory was a plain tree without Git metadata. All four starter tests passed under Python 3.12.3. Seven fixture cases covered reversal, missing premises, an added bridge, contradictory premises and a valid control. The checker correctly tests premise satisfiability separately from entailment. Keep it as a small exhaustive reference implementation.
