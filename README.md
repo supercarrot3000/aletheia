@@ -7,8 +7,16 @@ People and AI agents can inherit the same material, recover how a conclusion was
 ## Start with the research
 
 - [The Purple Man and Alice Springs](corpus/ideas/purple-man.md) preserves the full available recollection and the contributor's clarifications. The original playwright’s identity remains open, and their work helped inspire this project. [Provenance record](corpus/sources/purple-man-origin.json) · [Acknowledgement](ACKNOWLEDGEMENTS.md)
-- [Nature of God and fundamental reality](corpus/programmes/nature-of-god.md) introduces the divine-simplicity question. The local demonstration tests whether excluding composition also excludes real relational distinction. The [identity-collapse investigation](corpus/investigations/simplicity-identity.md) traces a sharper objection to Aquinas and compares finite models of the competing assumptions.
+- [Nature of God and fundamental reality](corpus/programmes/nature-of-god.md) introduces the divine-simplicity question. The local demonstration tests whether excluding composition also excludes real relational distinction.
 - [Moral True North](corpus/programmes/moral-true-north.md), [Moral beauty](corpus/programmes/moral-beauty.md) and [Moral discovery](corpus/programmes/moral-discovery.md) record hypotheses, competing readings and questions for further work.
+
+## Explore a question or check a finding
+
+- Work through a difficult idea on paper or in a browser. The worksheet helps you preserve the original account, compare plausible readings and find where they lead to different answers. [Explore a question](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/docs/research/explore.md)
+- Find a conclusion, its assumptions, its evidence and the objection it leaves open. [Check or reuse a finding](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/docs/research/findings.md) · [Machine-readable catalogue](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/docs/research/findings.json)
+- Start with identity collapse. Two things that are each literally identical to the same thing are identical to each other. A finite model shows how two opposed things can share a class label. Whether that captures Aquinas’s account of shared essence remains open. [Identity investigation](https://github.com/supercarrot3000/aletheia/blob/6fa31b09dc1d91dce39694260d6b03d96a43e029/corpus/investigations/simplicity-identity.md)
+
+The verified preview uses **Lean 4, Mathlib, Z3, Isabelle/HOL and Nitpick**. It includes a checked theorem about when grouping preserves relationships, and a modal investigation about when necessary relations would make creation necessary. The findings and instructions above are pinned to their draft revisions. The local commands below run from the default branch. [Integration draft](https://github.com/supercarrot3000/aletheia/pull/2) · [Preview replay instructions](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/verification/README.md)
 
 ## Run locally
 
@@ -26,10 +34,15 @@ The receipt reports a countermodel for the missing-bridge argument and a Lean-ch
 
 ## Standing on the shoulders of established research
 
-- **Implemented in the local milestone.** [Lean 4](https://lean-lang.org/doc/reference/latest/Introduction/) checks the exact encoded bridge theorem with its logical kernel and exposes its axiom dependencies.
-- **Planned where a proof needs the library.** [Mathlib](https://mathlib.org/) provides maintained definitions and theorems for Lean. The current proof uses Lean core.
-- **Planned for modal and higher-order work.** [Isabelle/HOL](https://isabelle.in.tum.de/) supports machine-checked higher-order proofs. [Nitpick](https://isabelle.in.tum.de/~nipkow/pubs/itp10.pdf) searches for finite countermodels to higher-order conjectures within stated bounds.
-- **Implemented for the optional finite-model experiment.** [Z3](https://microsoft.github.io/z3guide/docs/logic/basiccommands/) finds finite interpretations of common essence and opposition and compares them with stronger identity assumptions. The [investigation](corpus/investigations/simplicity-identity.md#replay) includes the replay command.
+**All five verification tools have been integrated and tested.** The initial release on `main` includes the Lean 4 bridge proof. The additional experiments and their replay instructions are available in the public drafts. [Identity-collapse PR](https://github.com/supercarrot3000/aletheia/pull/1) · [Integration PR](https://github.com/supercarrot3000/aletheia/pull/2)
+
+| Tool | Verified use | Where to replay it |
+| --- | --- | --- |
+| Lean 4 | Checks the bridge proof and exposes its axiom dependencies. | [Replay on `main`](#run-locally) |
+| Mathlib | Supplies the quotient machinery for the checked theorem about when grouping preserves a relationship. | [Mathlib replay](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/verification/README.md#mathlib-grouping-theorem) |
+| Z3 | Replays 15 finite queries comparing identity, common essence and opposition. | [Z3 replay](https://github.com/supercarrot3000/aletheia/blob/6fa31b09dc1d91dce39694260d6b03d96a43e029/corpus/investigations/simplicity-identity.md#replay) |
+| Isabelle/HOL | Checks the modal bridge theorem and the explicit interpretations for necessary relations and contingent creation. | [Isabelle replay](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/corpus/investigations/modal-creation.md#replay) |
+| Nitpick | Finds two-world counterexamples for the Aletheia creation argument and the published Anderson reference. | [Nitpick replay](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/corpus/investigations/modal-creation.md#replay) |
 
 Christoph Benzmüller and colleagues provide a precedent for computational theology that exposes the consequences of competing axioms. Benzmüller and Bruno Woltzenlogel Paleo formalised variants of Gödel’s ontological argument with higher-order provers. Benzmüller and David Fuenmayor examined positive properties and modal collapse in related variants. [Formalisation of Gödel’s argument](https://arxiv.org/abs/1308.4526) · [Analysis of modal collapse](https://arxiv.org/abs/1910.08955)
 
