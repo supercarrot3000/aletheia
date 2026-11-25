@@ -4,6 +4,11 @@ Aletheia investigates the nature of God, goodness, morality, consciousness and f
 
 People and AI agents can inherit the same material, recover how a conclusion was reached and challenge the steps for themselves. Aletheia welcomes scrutiny from any philosophical or religious starting point. A proof establishes what follows from its stated assumptions in its chosen logic. Assessing the truth of those assumptions, the fidelity of a theological interpretation and the character of lived experience requires other kinds of inquiry.
 
+## Start with a question
+
+- Work through an idea on paper or in a browser. [Explore a question](docs/research/explore.md)
+- Find an answer, its evidence and the objection that remains. [Check or reuse a finding](docs/research/findings.md) · [Machine-readable catalogue](docs/research/findings.json)
+
 ## Start with the research
 
 - [The Purple Man and Alice Springs](corpus/ideas/purple-man.md) preserves the full available recollection and the contributor's clarifications. The original playwright’s identity remains open, and their work helped inspire this project. [Provenance record](corpus/sources/purple-man-origin.json) · [Acknowledgement](ACKNOWLEDGEMENTS.md)
@@ -27,8 +32,8 @@ The receipt reports a countermodel for the missing-bridge argument and a Lean-ch
 ## Standing on the shoulders of established research
 
 - **Implemented in the local milestone.** [Lean 4](https://lean-lang.org/doc/reference/latest/Introduction/) checks the exact encoded bridge theorem with its logical kernel and exposes its axiom dependencies.
-- **Planned where a proof needs the library.** [Mathlib](https://mathlib.org/) provides maintained definitions and theorems for Lean. The current proof uses Lean core.
-- **Planned for modal and higher-order work.** [Isabelle/HOL](https://isabelle.in.tum.de/) supports machine-checked higher-order proofs. [Nitpick](https://isabelle.in.tum.de/~nipkow/pubs/itp10.pdf) searches for finite countermodels to higher-order conjectures within stated bounds.
+- [Mathlib](https://mathlib.org/) supplies the equivalence relations and product of quotients used in the checked grouping theorem. [Replay](verification/README.md#mathlib-grouping-theorem)
+- [Isabelle/HOL](https://isabelle.in.tum.de/) checks the modal bridge theorem. [Nitpick](https://isabelle.in.tum.de/doc/nitpick.pdf) finds countermodels to the actual-world bridge and the published Anderson reference. [Modal investigation](corpus/investigations/modal-creation.md)
 - **Implemented for the optional finite-model experiment.** [Z3](https://microsoft.github.io/z3guide/docs/logic/basiccommands/) finds finite interpretations of common essence and opposition and compares them with stronger identity assumptions. The [investigation](corpus/investigations/simplicity-identity.md#replay) includes the replay command.
 
 Christoph Benzmüller and colleagues provide a precedent for computational theology that exposes the consequences of competing axioms. Benzmüller and Bruno Woltzenlogel Paleo formalised variants of Gödel’s ontological argument with higher-order provers. Benzmüller and David Fuenmayor examined positive properties and modal collapse in related variants. [Formalisation of Gödel’s argument](https://arxiv.org/abs/1308.4526) · [Analysis of modal collapse](https://arxiv.org/abs/1910.08955)

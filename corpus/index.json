@@ -46,6 +46,13 @@
       "path": "investigations/simplicity-identity.md",
       "question_refs": ["Q-GOD-02", "Q-GOD-03", "Q-GOD-04"],
       "source_refs": ["SRC-AQUINAS-SUMMA"]
+    },
+    {
+      "id": "INV-MODAL-CREATION",
+      "title": "Necessary relations and contingent creation",
+      "path": "investigations/modal-creation.md",
+      "question_refs": ["Q-GOD-07"],
+      "source_refs": ["SRC-BENZMULLER-FUENMAYOR-MODAL-COLLAPSE"]
     }
   ],
   "sources": [
@@ -56,6 +63,10 @@
     {
       "id": "SRC-AQUINAS-SUMMA",
       "path": "sources/aquinas-summa-identity.json"
+    },
+    {
+      "id": "SRC-BENZMULLER-FUENMAYOR-MODAL-COLLAPSE",
+      "path": "sources/benzmuller-fuenmayor-modal-collapse.json"
     }
   ]
 }

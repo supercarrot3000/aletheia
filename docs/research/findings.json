@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "citation": "Pin the repository's Git commit when citing a finding. Paths and commands are relative to the repository root.",
+  "findings": [
+    {
+      "id": "FIND-IDENTITY-COLLAPSE",
+      "version": 1,
+      "questions": ["Q-GOD-02", "Q-GOD-03", "Q-GOD-04"],
+      "search_terms": ["same essence", "numerical identity", "identity collapse", "opposition", "Aquinas"],
+      "answer": "Ordinary identity collapses the two relata. A shared class label admits distinct opposed relata.",
+      "hold_if": ["Equality is ordinary identity on the same domain", "The finite witness interprets shared essence as equality of class labels"],
+      "reconsider_if": ["Shared class membership is claimed to capture Aquinas's sameness in reality"],
+      "source": {"url": "https://www.corpusthomisticum.org/sth1028.html", "locator": "Summa Theologiae I, q. 28, a. 3, arg. 1 and reply"},
+      "evidence": ["corpus/investigations/simplicity-identity.md", "verification/experiments/simplicity_identity.py", "verification/experiments/requirements-z3.txt"],
+      "replay": ".venv/bin/python -IB verification/experiments/simplicity_identity.py",
+      "review": "Finite formal result independently reviewed. Theological interpretation remains open."
+    },
+    {
+      "id": "FIND-RELATION-DESCENT",
+      "version": 1,
+      "questions": ["Q-GOD-04", "Q-GOD-05"],
+      "search_terms": ["grouping", "classification", "aggregation", "relation", "quotient", "equivalence class", "donors"],
+      "answer": "A relation descends to groups exactly when replacing either item by an item in the same group preserves the relation.",
+      "hold_if": ["Groups are fibres of the stated classifier", "The target relation is defined on source items"],
+      "reconsider_if": ["Changing representatives changes the observed relationship", "The classification or relation changes"],
+      "evidence": ["docs/research/findings.md", "verification/mathlib/AletheiaQuotient.lean", "verification/mathlib/lake-manifest.json"],
+      "replay": "cd verification/mathlib && lake env lean AletheiaQuotient.lean",
+      "review": "The theorem concerns the stated relation and classifier. Establish the correspondence to a new domain before reuse."
+    },
+    {
+      "id": "FIND-NECESSARY-BRIDGE",
+      "version": 1,
+      "questions": ["Q-GOD-07"],
+      "search_terms": ["modal collapse", "necessary", "contingent", "creation", "possible worlds", "bridge"],
+      "answer": "An implication that holds in all accessible worlds transfers necessity from its antecedent to its consequent. An actual-world implication alone leaves room for the consequent to vary.",
+      "hold_if": ["Necessity means truth at every accessible world", "The entailment assumes both a necessary antecedent and a necessary implication"],
+      "reconsider_if": ["The accessibility relation, the bridge or the interpretation of creation changes"],
+      "source": {"url": "https://arxiv.org/html/1910.08955", "locator": "Section 5, Figure 5 and its discussion of line 20"},
+      "evidence": ["corpus/investigations/modal-creation.md", "verification/isabelle/Creation.thy", "verification/isabelle/Anderson_Reference.thy", "verification/isabelle/ROOT"],
+      "replay": "isabelle build -D verification/isabelle",
+      "review": "The bridge remains a theological premise to assess."
+    }
+  ]
+}
