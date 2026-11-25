@@ -10,6 +10,14 @@ People and AI agents can inherit the same material, recover how a conclusion was
 - [Nature of God and fundamental reality](corpus/programmes/nature-of-god.md) introduces the divine-simplicity question. The local demonstration tests whether excluding composition also excludes real relational distinction.
 - [Moral True North](corpus/programmes/moral-true-north.md), [Moral beauty](corpus/programmes/moral-beauty.md) and [Moral discovery](corpus/programmes/moral-discovery.md) record hypotheses, competing readings and questions for further work.
 
+## Explore a question or check a finding
+
+- Work through a difficult idea on paper or in a browser. The worksheet helps you preserve the original account, compare plausible readings and find where they lead to different answers. [Explore a question](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/docs/research/explore.md)
+- Find a conclusion, its assumptions, its evidence and the objection it leaves open. [Check or reuse a finding](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/docs/research/findings.md) · [Machine-readable catalogue](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/docs/research/findings.json)
+- Start with identity collapse. Two things that are each literally identical to the same thing are identical to each other. A finite model shows how two opposed things can share a class label. Whether that captures Aquinas’s account of shared essence remains open. [Identity investigation](https://github.com/supercarrot3000/aletheia/blob/6fa31b09dc1d91dce39694260d6b03d96a43e029/corpus/investigations/simplicity-identity.md)
+
+The verified preview uses **Lean 4, Mathlib, Z3, Isabelle/HOL and Nitpick**. It includes a checked theorem about when grouping preserves relationships, and a modal investigation about when necessary relations would make creation necessary. The findings and instructions above are pinned to their draft revisions. The local commands below run from the default branch. [Integration draft](https://github.com/supercarrot3000/aletheia/pull/2) · [Preview replay instructions](https://github.com/supercarrot3000/aletheia/blob/8f188fe4d691269b412917a78264558de3de4998/verification/README.md)
+
 ## Run locally
 
 Use Python 3.10 or newer. For formal replay, install Elan and the Lean version pinned in [lean-toolchain](lean-toolchain). Once the toolchain is installed, the commands need no service or model credentials.
@@ -25,6 +33,8 @@ ALETHEIA_TEST_LEAN=1 python3 -B -m unittest discover -s verification/tests -v
 The receipt reports a countermodel for the missing-bridge argument and a Lean-checked entailment with the explicit bridge. The corpus keeps the semantic objection open. See the [runner handoff](runner/README.md) for independent proposal replay and the [verification guide](verification/README.md) for the result vocabulary.
 
 ## Standing on the shoulders of established research
+
+The implementation labels below refer to the initial release. The verified preview runs all five tools.
 
 - **Implemented in the local milestone.** [Lean 4](https://lean-lang.org/doc/reference/latest/Introduction/) checks the exact encoded bridge theorem with its logical kernel and exposes its axiom dependencies.
 - **Planned where a proof needs the library.** [Mathlib](https://mathlib.org/) provides maintained definitions and theorems for Lean. The current proof uses Lean core.
