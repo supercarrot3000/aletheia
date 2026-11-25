@@ -39,10 +39,23 @@
   "questions": "questions.json",
   "claims": "claims.json",
   "formal": "arguments.json",
+  "investigations": [
+    {
+      "id": "INV-SIMPLICITY-IDENTITY",
+      "title": "Identity collapse and relative opposition in divine simplicity",
+      "path": "investigations/simplicity-identity.md",
+      "question_refs": ["Q-GOD-02", "Q-GOD-03", "Q-GOD-04"],
+      "source_refs": ["SRC-AQUINAS-SUMMA"]
+    }
+  ],
   "sources": [
     {
       "id": "SRC-001",
       "path": "sources/purple-man-origin.json"
+    },
+    {
+      "id": "SRC-AQUINAS-SUMMA",
+      "path": "sources/aquinas-summa-identity.json"
     }
   ]
 }
