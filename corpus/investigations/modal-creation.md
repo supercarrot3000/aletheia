@@ -19,7 +19,7 @@ Install the Isabelle2025-2 distribution, put its executable on the command path 
 ```sh
 isabelle version
 isabelle build -D verification/isabelle
-isabelle build_log -v Aletheia
+isabelle process_theories -O -f verification/isabelle/Anderson_Reference.thy -f verification/isabelle/Creation.thy
 ```
 
 Where the experiment expects a countermodel, Nitpick must report a genuine one at the specified bound. A one-world control exhausts its scope without a counterexample. A potential counterexample or timeout fails these expectations. The Isabelle theorems separately check the general entailment and the two concrete interpretations. [Official pinned distribution](https://isabelle.in.tum.de/website-Isabelle2025-2/) · [Nitpick manual](https://isabelle.in.tum.de/doc/nitpick.pdf)
